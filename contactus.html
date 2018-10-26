@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Emblem Colectible Books</title>
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+	<!-- page header -->
+		<header id="pageheader" role="banner">
+			<div id="skiplinks">
+				<a href="#contactus_content" class="skiplink">content</a>
+			</div>
+			<nav id="quick">
+				<ul>
+					<li><a href="contactus.html">Contact us</a></li>
+					<li><a href="#">Accessibility</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+			<img id="logo" src="images/emblem_logo_192.png" alt="Emblem logo"/>
+			<h1><span>Emblem <br/></span>Rare, Collectible Books</h1>
+			<nav id="primary" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="books.html">Books</a></li>
+					<li><a href="delivery.html">Delivery</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Books as an investment</a></li>
+				</ul>
+			</nav>
+		</header>
+	<!-- end page header -->
+		<nav id="breadcrumbs" role="navigation">
+			<p><a href="index.html">Home</a> &rarr; <span class="current">Contact us</span></p>
+		</nav>
+	<!-- content -->
+		<main role="main" class="content" id="contactus_content">
+			<h2>Contact Emblem</h2>
+			<p>
+				 Please feel free to contact is if you are looking
+				 to buy a book not listed in our collection, 
+				 or you are looking to sell a book, 
+				 have a book valued or have a book repaired. 
+				 We try to answer all queries within 24 hours of receipt. 
+			</p>
+			<form action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php" method="post" role="form">
+				<fieldset>
+					<legend> Send us a message </legend>
+					<div class="controlgroup">
+						<label for="int" id="l_int">Title:</label>
+						<select name="interest" id="int" aria-labelledby="l_int">
+							<option value="1" selected>Mr</option>
+							<option value="2">Mrs</option>
+							<option value="3">Miss</option>
+							<option value="4">Ms</option>
+							<option value="5">Dr</option>
+							<option value="6">Prof</option>
+						</select>
+					</div>
+					<div class="controlgroup">
+						<label for="name" id="l_name">Name:</label>
+						<input type="text" name="name" id="name" placeholder="name and surrname" aria-labelledby="l_name"/>
+					</div>
+					<div class="controlgroup">
+						<label for="mail" id="l_email">Email address:</label>
+						<input type="email" name="email" id="mail" placeholder="Your full email address" required aria-required="true" aria-labelledby="l_email"/>
+					</div>
+					<div class="controlgroup">
+						<label for="query" id="1_query">Nature of query</label>
+						<select name="querynature" id="query" aria-labelledby="1_query">
+							<option value="1" selected>Buy books</option>
+							<option value="2">Sell books</option>
+							<option value="3">Return a book</option>
+							<option value="4">Delivery</option>
+							<option value="5">Complaint</option>
+							<option value="6">Other</option>
+						</select>
+					</div>
+					<div class="controlgroup">
+						<label for="msg" id="l_msg">Message:</label>
+						<textarea name="message" id="msg" placeholder="Type your message here..." required aria-required="true" aria-labelledby="l_msg"></textarea>
+					</div>
+					<input type="submit" name="sendmessage" value="Send"/>
+				</fieldset>
+			</form>
+		</main>
+	<!-- end content -->
+		<footer id="pagefooter" role="contentinfo">
+			<ul>
+				<li><a href="#">privacy</a></li>
+				<li><a href="#">terms & conditions</a></li>
+				<li><a href="#">returns </a></li>
+			</ul>
+			<p>&copy; Emblem Colectible Books, 2016</p>
+		</footer>
+    </body>
+</html>
